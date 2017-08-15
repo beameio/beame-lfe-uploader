@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mule Uploader</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container">
+    <label class="upload-button">
+        Upload files
+        <input type="file" id="files" class="hide" multiple/>
+    </label>
+
+    <div id="logger"></div>
+</div>
+
+<script type="text/template" id="file-template">
+    <div class="file-row">
+        <div class="file-name"></div><span class="cancel-upload">&times;</span>
+        <div class="file-status"></div>
+        <div class="progress active">
+            <div class="progress-bar" role="progressbar">
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/javascript" src="js/vendors/hmac-sha256.js"></script>
+<script type="text/javascript" src="js/uploader/utils.js"></script>
+<script type="text/javascript" src="js/uploader/xhr.js"></script>
+<script type="text/javascript" src="js/uploader/amazon.js"></script>
+<script type="text/javascript" src="js/uploader/uploader.js"></script>
+<script type="text/javascript" src="js/element.js" defer></script>
+<script type="text/javascript" src="js/app.js" defer></script>
+</body>
+</html>
